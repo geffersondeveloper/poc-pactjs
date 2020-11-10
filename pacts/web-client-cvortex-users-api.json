@@ -1,0 +1,44 @@
+{
+  "consumer": {
+    "name": "web-client"
+  },
+  "provider": {
+    "name": "cvortex-users-api"
+  },
+  "interactions": [
+    {
+      "description": "listar todos os usuários",
+      "request": {
+        "method": "GET",
+        "path": "/370c18ef-2806-4910-b1ee-0a70a526fb2d"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=UTF-8"
+        },
+        "body": [
+          {
+            "id": "cbefb970-fdbf-4648-93ae-860556d5be7d",
+            "nome": "Gefferson Oliveira",
+            "email": "gefferson.adriano@cvortex.io",
+            "idade": 21,
+            "usuarioAtivado": true
+          },
+          {
+            "id": "d21801d3-3e44-46df-a84e-0c566a769726",
+            "nome": "Brenda Garcia",
+            "email": "brenda.garcia@cvortex.io",
+            "idade": 21,
+            "usuarioAtivado": false
+          }
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
